@@ -37,7 +37,7 @@ class _CameraPageState extends State<CameraPage> {
             alignment: Alignment.bottomCenter,
             child: Container(
               height: MediaQuery.of(context).size.height * 0.20,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 borderRadius: BorderRadius.vertical(top: Radius.circular(30)),
                 color: Colors.black,
               ),
@@ -63,7 +63,7 @@ class _CameraPageState extends State<CameraPage> {
                   ),
                   Expanded(
                       child: IconButton(
-                    icon: Icon(Icons.circle, color: Colors.white, size: 70),
+                    icon: const Icon(Icons.circle, color: Colors.white, size: 70),
                     onPressed: () async {
                       XFile? foto = await tirarFoto();
                       if (foto != null) {
